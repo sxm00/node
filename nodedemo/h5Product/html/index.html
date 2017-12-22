@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta name="viewport" content="width=750, user-scalable=no" target-densitydpi="device-dpi">
+    <link rel="stylesheet" href="../css/swiper.min.css">
+    <link rel="stylesheet" href="../css/animate.min.css">
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="shortcut icon" href="../img/favicon-2017061310161229.ico">
+    <script src="../js/jquery-3.2.1.min.js"></script>
+    <script src="../js/swiper.min.js"></script>
+    <script src="../js/swiper.animate.min.js"></script>
+    <!--页面加载时js-->
+    <script>
+        window.onload=function () {
+            $(".logoin").css("transform","scale(0.9)")
+            setTimeout(function(){
+                $(".loading").hide();
+            },1000);//1.5秒后执行该方法
+            $(".back").hide()
+            $(".page2_ul1").hide()
+        }
+    </script>
+
+
+<body>
+<!--页面加载时出现-->
+<div class="loading">
+    <img src="../img/logoin.png" class="logoin"/>
+</div>
+<!--swiper部分-->
+<div class="swiper-container main">
+    <div class="back"></div>
+    <div class="swiper-wrapper" id="swip">
+        <!--第一部分-->
+        <div class="swiper-slide page1 ">
+            <img src="../img/P1/logo1.png" class="logo ani" swiper-animate-effect="fadeInLeft" swiper-animate-duration="0.5s" swiper-animate-delay="1.5s"/>
+            <img src="../img/P1/title.png" class="p1_1 ani"  swiper-animate-effect="fadeInRight" swiper-animate-duration="0.5s" swiper-animate-delay="1.5s"/>
+        </div>
+        <!--第二部分-->
+        <div class="swiper-slide page2 ">
+            <div class="swiper-container main2">
+                <div class="swiper-wrapper">
+                    <!--独家视频-->
+                    <div class="swiper-slide page2_1">
+                        <img src="../img/P2/video_pic.png" class="page2_img1 ani" swiper-animate-effect="zoomIn" swiper-animate-duration="0.5s" swiper-animate-delay="0.8s"/>
+                        <img src="../img/P2/per_img.png" class="page2_img2 ani" swiper-animate-effect="fadeInLeft" swiper-animate-duration="0.5s" swiper-animate-delay="0.8s"/>
+                    </div>
+                </div>
+            </div>
+            <img src="../img/arrow_gray.png"  class="page2_img3"/>
+        </div>
+        <!--第三部分-->
+        <div class="swiper-slide page3">
+            <!--明星展示-->
+            <div class="swiper-container main3">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="../img/P3/p3look1.jpg" class="main3_img1"/>
+                        <!--弹出部分-->
+                        <div class="sign">
+                            <img src="../img/P3/look_plus_bg.png" class="sign_img1"/>
+                        </div>
+                        <img src="../img/P3/look_plus.png" class="sign_img2"/>
+                        <div class="main3_yc1">
+                            <img src="../img/P3/look0.png"/>
+                            <div class="sign_yc">
+                                <img src="../img/P3/look_close.png" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="../img/P3/p3look2.jpg" class="main3_img1"/>
+                        <!--弹出部分-->
+                        <div class="sign">
+                            <img src="../img/P3/look_plus_bg.png" class="sign_img1"/>
+                        </div>
+                        <img src="../img/P3/look_plus.png" class="sign_img2"/>
+                        <div class="main3_yc1">
+                            <img src="../img/P3/look1.png" />
+                            <div class="sign_yc">
+                                <img src="../img/P3/look_close.png" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="../img/P3/p3look3.jpg" class="main3_img1"/>
+                        <div class="sign">
+                            <img src="../img/P3/look_plus_bg.png" class="sign_img1"/>
+                        </div>
+                        <img src="../img/P3/look_plus.png" class="sign_img2"/>
+                        <div class="main3_yc1">
+                            <img src="../img/P3/look2.png" />
+                            <div class="sign_yc">
+                                <img src="../img/P3/look_close.png" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="../img/P3/p3look4.jpg" class="main3_img1"/>
+                        <!--弹出部分-->
+                        <div class="sign">
+                            <img src="../img/P3/look_plus_bg.png" class="sign_img1"/>
+                        </div>
+                        <img src="../img/P3/look_plus.png" class="sign_img2"/>
+                        <div class="main3_yc1">
+                            <img src="../img/P3/look3.png" />
+                            <div class="sign_yc">
+                                <img src="../img/P3/look_close.png" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="../img/P3/p3look5.jpg" class="main3_img1"/>
+                        <!--弹出部分-->
+                        <div class="sign">
+                            <img src="../img/P3/look_plus_bg.png" class="sign_img1"/>
+                        </div>
+                        <img src="../img/P3/look_plus.png" class="sign_img2"/>
+                        <div class="main3_yc1">
+                            <img src="../img/P3/look4.png" />
+                            <div class="sign_yc">
+                                <img src="../img/P3/look_close.png" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+            <img src="../img/arrow_gray.png"  class="page2_img3"/>
+        </div>
+        <!--第四部分-->
+        <div class="swiper-slide page4">
+            <!--大片展示-->
+            <div class="swiper-container main4">
+                <div class="swiper-pagination"></div>
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="../img/P4/da1.jpg" class="page4_img"/></div>
+                    <div class="swiper-slide"><img src="../img/P4/da2.jpg" class="page4_img"/></div>
+                    <div class="swiper-slide"><img src="../img/P4/da3.jpg" class="page4_img"/></div>
+                    <div class="swiper-slide"><img src="../img/P4/da4.jpg" class="page4_img"/></div>
+                    <div class="swiper-slide"><img src="../img/P4/da5.jpg" class="page4_img"/></div>
+                    <div class="swiper-slide"><img src="../img/P4/da6.jpg" class="page4_img"/></div>
+                    <div class="swiper-slide"><img src="../img/P4/da7.jpg" class="page4_img"/></div>
+                    <div class="swiper-slide"><img src="../img/P4/da8.jpg" class="page4_img"/></div>
+                    <div class="swiper-slide"><img src="../img/P4/da9.jpg" class="page4_img"/></div>
+                    <div class="swiper-slide"><img src="../img/P4/da10.jpg" class="page4_img"/></div>
+                    <div class="swiper-slide"><img src="../img/P4/da11.jpg" class="page4_img"/></div>
+                    <div class="swiper-slide"><img src="../img/P4/da12.jpg" class="page4_img"/></div>
+                    <div class="swiper-slide"><img src="../img/P4/da13.jpg" class="page4_img"/></div>
+                    <div class="swiper-slide"><img src="../img/P4/da14.jpg" class="page4_img"/></div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+            <img src="../img/arrow_gray.png"  class="page2_img3"/>
+        </div>
+        <!--第五部分-->
+        <div class="swiper-slide page5">
+            <!--编辑推荐-->
+            <div class="swiper-container main5">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="../img/P5/tj2.jpg" class="page5_img"/>
+                        <div class="cirle"></div>
+                    </div>
+                    <div class="swiper-slide"><img src="../img/P5/tj1.jpg" class="page5_img"/></div>
+                    <div class="swiper-slide"><img src="../img/P5/tj3.jpg" class="page5_img"/></div>
+                </div>
+            </div>
+            <img src="../img/arrow_gray.png"  class="page2_img3"/>
+        </div>
+        <!--第六部分-->
+        <div class="swiper-slide page6">
+            <!--幕后团队-->
+            <div class="swiper-container main6">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide page6_1">
+                     <ul class="page6_ul">
+                         <li><img src="../img/P6/sina_ico.png" class="ani" swiper-animate-effect="fadeInLeft" swiper-animate-duration="0.5s" swiper-animate-delay="0.8s"/></li>
+                         <li><img src="../img/P6/wx_ico.png" class="ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.5s" swiper-animate-delay="1s"/></li>
+                         <li><img src="../img/P6/tx_ico.png" class="ani" swiper-animate-effect="fadeInRight" swiper-animate-duration="0.5s" swiper-animate-delay="0.8s"/></li>
+                     </ul>
+                        <img src="../img/P6/mh_pic.png" class="page6_img1 ani" swiper-animate-effect="fadeInLeft" swiper-animate-duration="0.5s" swiper-animate-delay="0.8s"/>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <ul class="page2_ul1" id="test">
+        <li  class="ul_01">独家视频</li>
+        <li class="ul_02">明星展示</li>
+        <li class="ul_03">大片展示</li>
+        <li class="ul_04">编辑推荐</li>
+        <li class="ul_05">幕后团队</li>
+    </ul>
+
+</div>
+
+</body>
+
+<!--swiper实例化-->
+<script>
+    var mySwiper = new Swiper ('.main', {
+        direction:'vertical',//垂直
+        on:{
+            init: function(){
+                swiperAnimateCache(this); //隐藏动画元素
+                swiperAnimate(this); //初始化完成开始动画
+            },
+            slideChangeTransitionEnd: function(swiper){
+                swiperAnimate(this); //每个slide切换结束时也运行当前slide动画
+                $('#test li').eq(mySwiper.activeIndex-1).addClass("page2_ul1_active").siblings().removeClass("page2_ul1_active");//滑动每一页添加样式
+                if (mySwiper.activeIndex==0){
+                    $(".back").hide()
+                    $(".page2_ul1").hide()
+                }else {
+                    $(".back").show()
+                    $(".page2_ul1").show()
+                }
+            }
+        },
+    });
+    var  mySwiper2=new Swiper(".main2",{
+        direction:'vertical'//垂直
+    });
+    var mySwiper3 = new Swiper('.main3', {
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        }
+    });
+    var  mySwiper4=new Swiper(".main4",{
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+        pagination: {
+            el: '.swiper-pagination',
+            clickable:true
+        }
+    });
+    var  mySwiper5=new Swiper(".main5",{
+        effect : 'flip',
+    });
+    var  mySwiper6=new Swiper(".main6",{
+
+    })
+    //点击back返回第一页面
+    $(".back").click(function () {
+        mySwiper.slideTo(0,1000,false)
+        $(".back").hide()
+        $(".page2_ul1").hide()
+    })
+
+/*导航循环滑动*/
+    $(function(){
+        $('#test li').each(function(index){
+            $(this).click(function () {
+                $(this).addClass("page2_ul1_active").siblings().removeClass("page2_ul1_active");
+                mySwiper.slideTo(index+1,1000,true);
+            })
+        })
+    })
+
+
+</script>
+<script>
+    /*第三部分隐藏显示内容*/
+    $(".sign").click(function () {
+        $(".main3_yc1").css("display","block");
+    })
+    $(".sign_yc").click(function () {
+        $(".main3_yc1").css("display","none");
+    })
+</script>
+
+
+
+
+
+
+
+</html>

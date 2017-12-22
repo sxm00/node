@@ -1,0 +1,305 @@
+*{  margin: 0;  padding: 0;  }
+html, body{width: 100%;height:100%;position: relative;font-family: "Microsoft Yahei", "Arial Narrow", sans-serif;font-size: 18px; }
+/*预加载*/
+.loading{ width: 100%; height: 100%; position: absolute; left: 0; top: 0; background:rgba(255,222,0,0.8); z-index: 100; }
+.loading .logoin{ position: absolute; left:50%; top: 50%; margin-left:-156px;margin-top: -156px;  transform:scale(0);-webkit-transform: scale(0);transition: all 0.5s; }
+/*内容*/
+.main{
+    width: 100%;
+    height: 100%;
+}
+.main .swiper-slide {
+    position: relative;
+    overflow: hidden;
+}
+/*第一部分*/
+.page1{
+    width: 100%;
+    height: 100%;
+    background:url("../img/P1/p1bg.jpg") no-repeat center center;
+    background-size: cover;
+}
+.logo{
+    position: absolute;
+    top: 45px;
+    left: 57px;
+}
+.p1_1{
+    position: absolute;
+    bottom: 107px;
+    left: 225px;
+}
+/*第二部分*/
+.main2,.main3,.main4,.main5,.main6{
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+}
+/*共用抬头样式*/
+.back {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 90px;
+    background:#363636 url("../img/back.png") no-repeat center center;
+    z-index: 10;
+}
+.page2_1{
+    background: #363636;
+}
+.page2_img1{
+    width:100%;
+    position: absolute;
+    top: 90px;
+    left: 0;
+}
+.page2_img2{
+    width:100%;
+    position: absolute;
+    top:50%;
+    left: 0;
+}
+
+/*共用下拉箭头*/
+.page2_img3{
+    position: absolute;
+    bottom: 8%;
+    left: 50%;
+    margin-left: -16px;
+    animation: move2 1.2s infinite;
+    -webkit-animation: move2 1.2s infinite;
+    z-index: 5;
+}
+/*下拉箭头动画*/
+@keyframes move2 {
+    0%{bottom:12%; opacity:1;}
+    100%{bottom:8%; opacity:0.1;}
+}
+@-webkit-keyframes move2 {
+    0%{bottom:12%; opacity:1;}
+    100%{bottom:8%; opacity:0.1;}
+}
+@-moz-keyframes  move2 {
+    0%{bottom:12%; opacity:1;}
+    100%{bottom:8%; opacity:0.1;}
+}
+@-o-keyframes move2 {
+    0%{bottom:12%; opacity:1;}
+    100%{bottom:8%; opacity:0.1;}
+}
+@-ms-keyframes  move2 {
+    0%{bottom:12%; opacity:1;}
+    100%{bottom:8%; opacity:0.1;}
+}
+/*共用底部标题*/
+.page2_ul1{
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    z-index: 10;
+    width: 100%;
+    list-style: none;
+    font-size: 26px;
+	padding:0 26px;
+}
+.page2_ul1 li:not(.page2_ul1_active){
+     float: left;
+    text-align: center;
+    color: #ffffff;
+    background: #000000;
+    margin-left: 5px;
+	width: 18%;
+    height: 67px;
+    line-height: 67px;
+}
+.page2_ul1_active{
+       float: left;
+    text-align: center;
+    /* margin-left: 5px; */
+    color: #000000;
+    background: #fed144;
+	width: 18%;
+    height: 67px;
+    line-height: 67px;
+}
+/*第三部分*/
+
+.main3_img1,.page4_img,.page5_img{
+    position: absolute;
+    top: 6%;
+	 left: 0;
+    height: inherit;
+    width: 100%;
+}
+/*点击出现小的轮播*/
+.sign{
+    position: absolute;
+    top: 54%;
+    right: 23%;
+    z-index: 13;
+    cursor: pointer;
+    animation: ripple 1.2s infinite;
+    -webkit-animation: ripple 1.2s infinite;
+}
+
+.sign_img2{
+    position: absolute;
+    top: 55%;
+    right: 25%;
+    z-index: 12;
+}
+@keyframes ripple {
+    0% {
+       transform: scale(0);
+        transition: all 0.5s;
+    }
+    20% {
+        transform: scale(0.5);
+        transition: all 0.5s;
+    }
+    40% {
+        transform: scale(1);
+        transition: all 0.5s;
+    }
+    60% {
+        transform: scale(0.5);
+        transition: all 0.5s;
+    }
+    80% {
+        transform: scale(0.5);
+        transition: all 0.5s;
+    }
+    100%{
+        transform: scale(1);
+        transition: all 0.5s;
+    }
+
+}
+
+/*隐藏部分*/
+.main3_yc1{
+    position: absolute;
+    top: 17%;
+    left: 9%;
+    z-index: 12;
+    display: none;
+}
+
+.main3_yc1 img{
+width:100%;
+}
+
+.sign_yc{
+    position: absolute;
+    top: -1%;
+    right: 1%;
+    z-index: 13;
+}
+
+.sign_yc:active .main3_yc1{
+    display: none;
+}
+
+/*第四部分*/
+/*分页*/
+.swiper-container-horizontal>.swiper-pagination-bullets{
+    position: absolute;
+    top: 10%;
+    z-index: 10;
+}
+.swiper-pagination-bullet {
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    background: url("../img/P4/dppoint1.png") no-repeat center center;
+}
+.swiper-pagination-bullet-active {
+    width: 24px;
+    height: 24px;
+    display: inline-block;
+    background: url("../img/P4/dppoint2.png") no-repeat center center;
+
+}
+/*分页over*/
+
+/*第六部分*/
+.page6_1{
+    height: 100%;
+    background:url("../img/P6/mhbg.jpg") no-repeat center center;
+    background-size: cover;
+    top: 88px;
+}
+.page6_ul{
+    position: absolute;
+    top: 30%;
+    left:22%;
+    list-style: none;
+}
+.page6_ul li{
+    float: left;
+    padding: 16px;
+}
+.page6_img1{
+    position: absolute;
+    bottom:18%;
+    left: 2%;
+    width: 95%;
+}
+.swiper-button-next{
+    width: 50px;
+    height: 115px;
+    background: url("../img/P4/dp_arrowr.png") no-repeat center center;
+}
+.swiper-button-prev{
+    width: 50px;
+    height: 115px;
+    background: url("../img/P4/dp_arrowl.png")no-repeat center center;
+}
+.cirle{
+    position: absolute;
+    width: 138px;
+    height: 174px;
+    border-radius: 100%;
+    /*border: 1px solid #4a4a4a;*/
+    background: #4a4a4a;
+    top: 49%;
+    right: 41%;
+    animation: ripple2 1.2s infinite;
+    -webkit-animation: ripple2 1.2s infinite;
+}
+@keyframes ripple2 {
+    0% {
+        transform: scale(0);
+        transition: all 0.5s;
+        opacity: 0;
+    }
+    20% {
+        transform: scale(1.1);
+        transition: all 0.5s;
+        opacity: 0.5;
+    }
+    40% {
+        transform: scale(1.3);
+        transition: all 0.5s;
+        opacity: 0.3;
+    }
+    60% {
+        transform: scale(1.1);
+        transition: all 0.5s;
+        pacity: 0.5;
+    }
+    80% {
+        transform: scale(1.3);
+        transition: all 0.5s;
+        pacity: 0.3;
+    }
+    100%{
+        transform: scale(0);
+        transition: all 0.5s;
+        opacity: 0;
+    }
+
+}
