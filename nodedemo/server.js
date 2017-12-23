@@ -18,7 +18,6 @@ http.createServer(function (req,res) {
         //向页面上输出的信息
         res.end(data);
     })
-
     //监听
 }).listen(8080);
 console.log("server works");*/

@@ -18,8 +18,6 @@
             setTimeout(function(){
                 $(".loading").hide();
             },1000);//1.5秒后执行该方法
-            $(".back").hide()
-            $(".page2_ul1").hide()
         }
     </script>
 
@@ -214,12 +212,18 @@
                 swiperAnimate(this); //每个slide切换结束时也运行当前slide动画
                 $('#test li').eq(mySwiper.activeIndex-1).addClass("page2_ul1_active").siblings().removeClass("page2_ul1_active");//滑动每一页添加样式
                 if (mySwiper.activeIndex==0){
-                    $(".back").hide()
-                    $(".page2_ul1").hide()
+                    $(".back").css("display","none")
+                    $(".page2_ul1").css("display","none")
                 }else {
-                    $(".back").show()
-                    $(".page2_ul1").show()
+                    $(".back").css("display","block")
+                    $(".page2_ul1").css("display","block")
                 }
+                //点击back返回第一页面
+                $(".back").click(function () {
+                    mySwiper.slideTo(0,1000,true)
+                    $(".back").css("display","none")
+                    $(".page2_ul1").css("display","none")
+                })
             }
         },
     });
@@ -248,12 +252,7 @@
     var  mySwiper6=new Swiper(".main6",{
 
     })
-    //点击back返回第一页面
-    $(".back").click(function () {
-        mySwiper.slideTo(0,1000,false)
-        $(".back").hide()
-        $(".page2_ul1").hide()
-    })
+
 
 /*导航循环滑动*/
     $(function(){
@@ -264,10 +263,6 @@
             })
         })
     })
-
-
-</script>
-<script>
     /*第三部分隐藏显示内容*/
     $(".sign").click(function () {
         $(".main3_yc1").css("display","block");
@@ -275,12 +270,7 @@
     $(".sign_yc").click(function () {
         $(".main3_yc1").css("display","none");
     })
+
 </script>
-
-
-
-
-
-
 
 </html>
