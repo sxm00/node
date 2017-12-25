@@ -72,6 +72,9 @@ html, body{width: 100%;height:100%;position: relative;font-family: "Microsoft Ya
     margin-left: -16px;
     animation: move2 1.2s infinite;
     -webkit-animation: move2 1.2s infinite;
+    -moz-animation:move2 1.2s infinite;
+    -ms-animation:move2 1.2s infinite;
+    -o-animation:move2 1.2s infinite;
     z-index: 5;
 }
 /*下拉箭头动画*/
@@ -145,6 +148,9 @@ html, body{width: 100%;height:100%;position: relative;font-family: "Microsoft Ya
     cursor: pointer;
     animation: ripple 1.2s infinite;
     -webkit-animation: ripple 1.2s infinite;
+    -moz-animation:ripple 1.2s infinite;
+    -ms-animation:ripple 1.2s infinite;
+    -o-animation:ripple 1.2s infinite;
 }
 
 .sign_img2{
@@ -180,7 +186,114 @@ html, body{width: 100%;height:100%;position: relative;font-family: "Microsoft Ya
     }
 
 }
+@-webkit-keyframes ripple {
+    0% {
+        transform: scale(0);
+        transition: all 0.5s;
+    }
+    20% {
+        transform: scale(0.5);
+        transition: all 0.5s;
+    }
+    40% {
+        transform: scale(1);
+        transition: all 0.5s;
+    }
+    60% {
+        transform: scale(0.5);
+        transition: all 0.5s;
+    }
+    80% {
+        transform: scale(0.5);
+        transition: all 0.5s;
+    }
+    100%{
+        transform: scale(1);
+        transition: all 0.5s;
+    }
 
+}
+@-moz-keyframes ripple {
+    0% {
+        transform: scale(0);
+        transition: all 0.5s;
+    }
+    20% {
+        transform: scale(0.5);
+        transition: all 0.5s;
+    }
+    40% {
+        transform: scale(1);
+        transition: all 0.5s;
+    }
+    60% {
+        transform: scale(0.5);
+        transition: all 0.5s;
+    }
+    80% {
+        transform: scale(0.5);
+        transition: all 0.5s;
+    }
+    100%{
+        transform: scale(1);
+        transition: all 0.5s;
+    }
+
+}
+@-o-keyframes ripple {
+    0% {
+        transform: scale(0);
+        transition: all 0.5s;
+    }
+    20% {
+        transform: scale(0.5);
+        transition: all 0.5s;
+    }
+    40% {
+        transform: scale(1);
+        transition: all 0.5s;
+    }
+    60% {
+        transform: scale(0.5);
+        transition: all 0.5s;
+    }
+    80% {
+        transform: scale(0.5);
+        transition: all 0.5s;
+    }
+    100%{
+        transform: scale(1);
+        transition: all 0.5s;
+    }
+
+}
+@-ms-keyframes ripple {
+    0% {
+        transform: scale(0);
+        transition: all 0.5s;
+    }
+    20% {
+        transform: scale(0.5);
+        transition: all 0.5s;
+    }
+    40% {
+        transform: scale(1);
+        transition: all 0.5s;
+    }
+    60% {
+        transform: scale(0.5);
+        transition: all 0.5s;
+    }
+    80% {
+        transform: scale(0.5);
+        transition: all 0.5s;
+    }
+    100%{
+        transform: scale(1);
+        transition: all 0.5s;
+    }
+
+}
 /*隐藏部分*/
 .main3_yc1{
     position: absolute;
@@ -271,6 +384,9 @@ width:100%;
     right: 43%;
     animation: ripple2 1.2s infinite;
     -webkit-animation: ripple2 1.2s infinite;
+    -moz-animation:ripple2 1.2s infinite;
+    -ms-animation:ripple2 1.2s infinite;
+    -o-animation:ripple2 1.2s infinite;
 }
 @keyframes ripple2 {
     0% {
@@ -291,12 +407,144 @@ width:100%;
     60% {
         transform: scale(1.1);
         transition: all 0.5s;
-        pacity: 0.5;
+        opacity: 0.5;
     }
     80% {
         transform: scale(1.3);
         transition: all 0.5s;
-        pacity: 0.3;
+        opacity: 0.3;
+    }
+    100%{
+        transform: scale(0);
+        transition: all 0.5s;
+        opacity: 0;
+    }
+
+}
+@-webkit-keyframes ripple2 {
+    0% {
+        transform: scale(0);
+        transition: all 0.5s;
+        opacity: 0;
+    }
+    20% {
+        transform: scale(1.1);
+        transition: all 0.5s;
+        opacity: 0.5;
+    }
+    40% {
+        transform: scale(1.3);
+        transition: all 0.5s;
+        opacity: 0.3;
+    }
+    60% {
+        transform: scale(1.1);
+        transition: all 0.5s;
+        opacity: 0.5;
+    }
+    80% {
+        transform: scale(1.3);
+        transition: all 0.5s;
+        opacity: 0.3;
+    }
+    100%{
+        transform: scale(0);
+        transition: all 0.5s;
+        opacity: 0;
+    }
+
+}
+@-moz-keyframes ripple2 {
+    0% {
+        transform: scale(0);
+        transition: all 0.5s;
+        opacity: 0;
+    }
+    20% {
+        transform: scale(1.1);
+        transition: all 0.5s;
+        opacity: 0.5;
+    }
+    40% {
+        transform: scale(1.3);
+        transition: all 0.5s;
+        opacity: 0.3;
+    }
+    60% {
+        transform: scale(1.1);
+        transition: all 0.5s;
+        opacity: 0.5;
+    }
+    80% {
+        transform: scale(1.3);
+        transition: all 0.5s;
+        opacity: 0.3;
+    }
+    100%{
+        transform: scale(0);
+        transition: all 0.5s;
+        opacity: 0;
+    }
+
+}
+@-ms-keyframes ripple2 {
+    0% {
+        transform: scale(0);
+        transition: all 0.5s;
+        opacity: 0;
+    }
+    20% {
+        transform: scale(1.1);
+        transition: all 0.5s;
+        opacity: 0.5;
+    }
+    40% {
+        transform: scale(1.3);
+        transition: all 0.5s;
+        opacity: 0.3;
+    }
+    60% {
+        transform: scale(1.1);
+        transition: all 0.5s;
+        opacity: 0.5;
+    }
+    80% {
+        transform: scale(1.3);
+        transition: all 0.5s;
+        opacity: 0.3;
+    }
+    100%{
+        transform: scale(0);
+        transition: all 0.5s;
+        opacity: 0;
+    }
+
+}
+@-o-keyframes ripple2 {
+    0% {
+        transform: scale(0);
+        transition: all 0.5s;
+        opacity: 0;
+    }
+    20% {
+        transform: scale(1.1);
+        transition: all 0.5s;
+        opacity: 0.5;
+    }
+    40% {
+        transform: scale(1.3);
+        transition: all 0.5s;
+        opacity: 0.3;
+    }
+    60% {
+        transform: scale(1.1);
+        transition: all 0.5s;
+        opacity: 0.5;
+    }
+    80% {
+        transform: scale(1.3);
+        transition: all 0.5s;
+        opacity: 0.3;
     }
     100%{
         transform: scale(0);
